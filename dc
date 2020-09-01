@@ -27,7 +27,7 @@ if [ "$1" == "setup" ]; then
   && sudo apt update -y \
   && sudo apt install certbot -y \
   && sudo certbot certonly --standalone -d $2
-  && echo 'Installing Docker...' \
+  echo 'Installing Docker...' \
   && apt install apt-transport-https ca-certificates curl software-properties-common gnupg -y \
   && curl -fsSL https://download.docker.com/linux/ubuntu/gpg | apt-key add - \
   && apt-key fingerprint 0EBFCD88 \
