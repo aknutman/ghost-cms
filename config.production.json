@@ -1,5 +1,5 @@
 {
-  "url": "https://<domain>",
+  "url": "https://idecomp.com",
   "server": {
       "port": 2368,
       "host": "0.0.0.0"
