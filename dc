@@ -16,11 +16,11 @@ fi
 if [ "$1" == "setup" ]; then
   echo 'Updating system...' \
   && apt upgrade -y \
-  && rm -rf ghost; git clone https://github.com/clean-docker/ghost-cms ghost \
+  && rm -rf ghost; git clone https://github.com/aknutman/ghost-cms ghost \
   && cd ghost \
-  && sed -e "s/<domain>/$2/g" docker-compose.yml \
-  && sed -e "s/<domain>/$2/g" nginx/default.conf \
-  && sed -e "s/<domain>/$2/g" config.production.json \
+  && sed -e "s/idecomp.com/$2/g" docker-compose.yml \
+  && sed -e "s/idecomp.com/$2/g" nginx/default.conf \
+  && sed -e "s/idecomp.com/$2/g" config.production.json \
   && echo 'Installing SSL...' \
   && sudo apt install software-properties-common -y \
   && sudo add-apt-repository ppa:certbot/certbot -y \
@@ -45,6 +45,6 @@ if [ "$1" == "setup" ]; then
   && echo 'Starting Docker...' \
   && docker-compose up -d \
   && echo 'Done! 🎉' \
-  && echo 'by Rafael Correa Gomes' \
+  && echo 'by Eldest Arif Pasirula' \
   && echo 'Access your host: https://'; echo $2;
 fi
