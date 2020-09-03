@@ -6,8 +6,6 @@ These are some reassons why use this Docker Compose in your production environme
 
 👨‍💻 Ready to production and local development
 
-⚡ Performance Optimized
-
 🔒 SSL auto-renewed
 
 ## Stack
