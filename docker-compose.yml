@@ -7,7 +7,7 @@ services:
     depends_on:
       - db
     environment:
-      url: https://<domain>
+      url: https://idecomp.com
       database__client: mysql
       database__connection__host: db
       database__connection__user: root
